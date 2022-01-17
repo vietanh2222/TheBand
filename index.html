@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Band</title>
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+    <div id="main">
+        <div id="header">
+            <ul id="nav">
+                <li class="js-click-close"><a href="#">Home</a></li>
+                <li class="responsive-li js-click-close"><a href="#band">Band</a></li>
+                <li class="responsive-li js-click-close"><a href="#tour">Tour</a></li>
+                <li class="responsive-li js-click-close"><a href="#contact">Contact</a></li>
+                <li class="responsive-li" id="more_nav">
+                    <a href="#">
+                        More 
+                        <ion-icon name="caret-down-outline"></ion-icon>
+                    </a>
+                    <ul class="subnav">
+                        <li><a href="#">Merchandise</a></li>
+                        <li><a href="#">Extras</a></li>
+                        <li><a href="#">Media</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div id="search">
+                <a href="#">
+                    <ion-icon name="search-outline">
+                    </ion-icon>
+                </a>
+                <ion-icon name="list-outline" id="responsive-button"></ion-icon>
+            </div>
+        </div>
+
+        <div id="slider">
+            <div class="text">
+                <h2>Los Angeles</h2>
+                <span>We had the best time playing at Venice Beach</span>
+             </div>
+        </div>
+
+        <div id="content">
+
+            <div class="about-us" id="band">
+                <div class="text-aboutus heading">
+                    <h3>The Band</h3>
+                    <span>We love music</span>
+                    <p>We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+                <div class="contact-us">
+                    <ul class="information">
+                        <li>
+                            <p>Name</p>
+                            <img src="./assets/img/bandmember.jpg">
+                        </li>
+                        <li>
+                            <p>Name</p>
+                            <img src="./assets/img/bandmember.jpg">
+                        </li>
+                        <li>
+                            <p>Name</p>
+                            <img src="./assets/img/bandmember.jpg">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="tour-date">
+
+                <div class="content-date" id="tour">
+                    <div class="text-tour heading">
+                        <h3>Tour Dates</h3>
+                        <span>Remember to book your tickets!</span>
+                    </div>
+                    <div class="book">
+                        <br>
+                        <ul class="tickets">
+                            <li>
+                                <p>September <span>Sold out</span></p>
+                            </li>
+                            <li id="boder">
+                                <p>October <span>Sold out</span></p>
+                            </li>
+                            <li id="three">
+                                <p>November <span>3</span></p>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="book-ticket">
+                        <div class="address-book">
+                            <img src="assets/img/newyork.jpg"/>
+                            <h5>New York</h5>
+                            <span>Fri 27 Nov 2016</span>
+                            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                            <a  class="js_buy_tickets">Buy Tickets</a>
+                        </div>
+                        <div class="address-book">
+                            <img src="assets/img/paris.jpg"/>
+                            <h5>Paris</h5>
+                            <span>Sat 28 Nov 2016</span>
+                            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                            <a  class="js_buy_tickets">Buy Tickets</a>
+                        </div>
+                        <div class="address-book">
+                            <img src="assets/img/sanfran.jpg"/>
+                            <h5>San Francisco</h5>
+                            <span>Sun 29 Nov 2016</span>
+                            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                            <a  class="js_buy_tickets">Buy Tickets</a> 
+                        </div>
+                    </div>
+                 </div>
+            </div>
+        </div>
+        <div id="contact">
+            <div class="contact-contain">
+                <div class="text-contact heading">
+                    <h3>Contact</h3>
+                    <span>Fan? Drop A Note</span>
+                </div>
+
+                <div class="contac-info">
+                    <div class="info">
+                        <p><ion-icon name="navigate-circle-outline"></ion-icon>Chicago, US</p>
+                        <p><ion-icon name="call-outline"></ion-icon></ion-icon>Phone: +00 151515</p>
+                        <p><ion-icon name="mail-outline"></ion-icon></ion-icon>Email: mail@mail.com</p>
+                    </div>
+                    <div class="input-info">
+                            <div class="half" id="table-row">
+                                <input type ="text" placeholder="Name" >
+                            </div>
+                            <div class="half">
+                                <input type ="email" placeholder="Email">
+                            </div>
+                            <div class="full">
+                                <input type="text" placeholder="Message">
+                            </div>
+                            <div>
+                                <input type="submit" value="SEND" id="send">
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="img-address">
+
+        </div>
+
+        <div id="footer">
+            <div class="content-footer">
+                <ion-icon name="logo-facebook"></ion-icon>
+                <ion-icon name="logo-instagram"></ion-icon>
+                <ion-icon name="logo-snapchat"></ion-icon>
+                <ion-icon name="logo-pinterest"></ion-icon>
+                <ion-icon name="logo-twitter"></ion-icon>
+                <ion-icon name="logo-linkedin"></ion-icon>
+                <p>Powered by <a href="#">w3.css</a></p>
+            </div>
+        </div>
+    </div>
+    <div class="tickets-container">
+        <div class="tickets-buy">
+            <ion-icon name="close-outline" id="close-button"></ion-icon>
+            <div class="tickets-buy__heading">
+                <ion-icon name="bag-outline"></ion-icon>
+                <h3>Tickets</h3>
+            </div>
+
+            <div class="tickets-buy__main">
+                <label for="quantity">
+                    <ion-icon name="cart-outline"></ion-icon>
+                    Tickets, $15 per person
+                </label>
+                <input type="text" id="quantity" placeholder="How many?" class="tickets-input">
+
+                <label for="email_info">
+                    <ion-icon name="person-outline"></ion-icon>
+                    Send To
+                </label>
+                <input type="text" id="email_info" placeholder="Enter email" class="tickets-input">
+                <div class="button_pay">
+                    <input type="Submit" id="submit_button" value="Pay">
+                    <ion-icon name="checkmark-outline"></ion-icon>
+                </div>
+                <p id="help">Need <a href="">help?</a></p>
+            </div>
+        </div>
+    </div>
+
+    
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <script>
+        const buyBtns = document.querySelectorAll('.js_buy_tickets');
+        const addopen = document.querySelector('.tickets-container');
+        const NoClose = document.querySelector('.tickets-buy');
+        const showButton = document.getElementById('responsive-button');
+        const header = document.getElementById('header');
+        const responsivelis = document.querySelectorAll('.responsive-li');
+        const ClickMenuClosedBtns = document.querySelectorAll('.js-click-close');
+        const moreNavElement = document.querySelector('#more_nav');
+        let headerHeight = document.getElementById('header').clientHeight;
+
+        moreNavElement.addEventListener('click', function(event) {
+            event.preventDefault();
+        });
+
+        function ShowBuyTickets() {
+            addopen.classList.add('open');
+        }
+       
+        for(const buyBtn of buyBtns)
+        {
+            buyBtn.addEventListener('click', ShowBuyTickets);
+        }
+
+        const removeopen = document.querySelector('#close-button');
+        function CloseBuyTickets() {
+            addopen.classList.remove('open');
+        }
+
+        removeopen.addEventListener('click', CloseBuyTickets);
+        addopen.addEventListener('click', CloseBuyTickets );
+        NoClose.addEventListener('click', function(event) {
+            event.stopPropagation();
+        });
+        function CloseMenu() {
+            for(const responsiveli of responsivelis){
+                    responsiveli.classList.remove('open');
+            }
+            header.style.height = headerHeight + 'px';
+        }
+
+        for(const ClickMenuClosedBtn of ClickMenuClosedBtns ){
+            ClickMenuClosedBtn.addEventListener('click', CloseMenu);
+        }
+
+        showButton.onclick = function() {
+            var isClosed = header.clientHeight === headerHeight;
+            if (isClosed) {
+                header.style.height = 'auto';
+                for(const responsiveli of responsivelis){
+                    responsiveli.classList.add('open');
+                }
+            } else {
+                header.style.height = headerHeight + 'px';
+                CloseMenu();
+                }
+            }
+       
+    </script>
+</body>
+</html>

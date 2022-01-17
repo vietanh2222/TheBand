@@ -1,0 +1,674 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+html{
+    font-family: Helvetica, Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+#main{
+    position: relative;
+}
+
+#header{
+    height: 46px;
+    background-color: #000;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+#nav{
+    display: flex;
+}
+
+
+#nav li {
+    list-style: none;
+    line-height: 46px;
+    position: relative;
+    display: inline-block;
+}
+
+#nav>li>a{
+    color: #fff;
+}
+
+#nav li a {
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 0 24px;
+}
+
+#nav > li > a:hover {
+    color: #000;
+    background-color: #ccc;
+    display: block;
+}
+
+#nav li:hover .subnav{
+    display: block;
+}
+
+#nav .subnav {
+    display: none;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    min-width: 160px;
+    position: absolute;
+    top: 100%;
+}
+
+.subnav > li {
+    width: 100%;
+}
+
+#nav .subnav li a {
+    color: #000;
+    text-transform: capitalize;
+    padding-left: 12px;
+    line-height: 38px;
+}
+
+
+#nav ion-icon{
+    line-height: 46px;
+    font-size: 16px;
+}
+
+#nav .subnav li:hover{
+    background-color: #ccc;
+}
+
+#search ion-icon
+{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 900;
+    position: absolute;
+    right: 0;
+    padding: 13px 20px;
+}
+
+#responsive-button{
+    display: none;
+}
+
+#search ion-icon:hover{
+    background-color: #f44336;
+}
+
+#slider{
+    margin-top: 46px;
+    padding-top: 50%;
+    background-image: url('./img/img_la.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+#slider .text h2, #slider .text span{
+    color: #fff;
+    font-weight: 300;
+}
+
+#slider .text{
+    position: absolute;
+    bottom: 60px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    line-height: 50px;
+}
+
+.about-us{
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.heading h3{
+    color: #000;
+    text-transform: uppercase;
+    font-weight: 400;
+    padding-top: 64px;
+    margin: 10px 0;
+    font-size: 30px;
+    letter-spacing: 3px;
+}
+
+.heading span{
+    color: #ccc;
+    font-style: italic;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 15px 0;
+}
+
+.heading p{
+    margin: 15px 0;
+    text-align: justify;
+    line-height: 1.4;
+    font-size: 15px;
+}
+
+.contact-us ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-us li{
+    list-style: none;
+    margin: 64px 20px 0px;
+    width: 33.33333%;
+}
+
+.contact-us img
+{
+    max-width: 60%;
+    margin-bottom: 16px;
+    border-radius: 4px;
+    padding-bottom: 64px;
+}
+
+.information p
+{
+    margin: 15px 0;
+}
+
+.tour-date {
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-date
+{
+    max-width: 800px;
+}
+
+.text-tour
+{
+    text-align: center;
+}
+
+.text-tour h3
+{
+    color: #fff !important;
+}
+
+.tickets{
+    margin: 0 8px;
+}
+
+.tickets li
+{
+    list-style: none;
+    background-color: #fff;
+}
+
+.tickets li p{
+    font-size: 12px;
+    color: gray;
+    padding: 8px 16px;
+}
+.tickets li span{
+    background-color: red;
+    color: #fff;
+    margin-left: 10px;
+}
+
+#boder
+{
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;  
+}
+
+#three span
+{
+    background-color: #000;
+    padding: 2px 8px;
+    border-radius: 50%;
+    float: right;
+    margin-right: 16px;
+}
+
+.book-ticket
+{
+    padding: 32px 0;
+    display: flex;
+}
+
+.address-book
+{
+    width: 33.3333%;
+    margin: 0 8px 16px;
+    background-color: #fff;
+}
+
+.address-book img
+{
+    width: 100%;
+}
+
+.address-book img:hover
+{
+   opacity: 0.8;
+}
+
+.address-book span
+{
+    margin: 15px 0;
+    font-size: 15px;
+    line-height: 1.5;
+    padding: 0 16px;
+    color: gray;
+    opacity: 0.60;
+}
+
+.address-book h5
+{
+    margin: 15px 0;
+    padding: 0 16px;
+    font-size: 15px;
+}
+
+
+.address-book p{
+    margin: 15px 0;
+    padding: 0 16px;
+    font-size: 15px;
+}
+
+.address-book a{
+    display: inline-block;
+    margin: 15px 16px;
+    color: #fff;
+    padding: 8px 16px;
+    border: none;
+    background-color: #000;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.address-book a:hover
+{
+    background-color: #ccc;
+    color: #000;
+
+}
+
+.contact-contain
+{
+    width: 800px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.contac-info{
+    display: flex;
+    justify-content: flex-start;
+    align-items:flex-start;
+    margin-top: 47px;
+    margin-bottom: 104px;
+}
+
+.info{
+    width: 50%;
+}
+
+.input-info{
+    width: 50%;
+}
+
+.info p{
+    text-align: left;
+    line-height: 1.4;
+    font-size: 20px;
+}
+
+.info p ion-icon{
+    font-weight: 700;
+    padding-right: 10px;
+    color: #000;
+}
+
+.input-info input{
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    height: 40px;
+    margin: 4px;
+}
+
+.half{
+    width: 48%;
+    float: left;
+}
+
+#table-row{
+    margin-right: 16px;
+}
+
+#send{
+    width: 70px;
+    float: right;
+    cursor: pointer;
+    color: #fff;
+    background-color: #000;
+    font-weight: 400;
+    margin-right: -4px;
+}
+
+#send:hover
+{
+    color: #000;
+    background-color: #ccc;
+}
+
+#img-address{
+    padding-top: 56%;
+    background-image: url(/assets/img/map.jpg);
+    background-repeat: none;
+    background-size: cover;
+}
+
+.content-footer
+{
+    padding: 64px 16px;
+    text-align: center;
+    background-color: #f1f1f1;
+}
+
+.content-footer ion-icon
+{
+    font-size: 28px;
+    color: grey;
+    font-weight: 900;
+}
+
+.content-footer ion-icon:hover
+{
+    opacity: 0.6;
+}
+
+.content-footer p
+{
+    font-size: 16px;
+    color: grey;
+    margin: 15px 0;
+}
+
+.content-footer p a
+{
+    font-size: 16px;
+    color: grey;
+}
+
+.tickets-container{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.tickets-container.open{
+    display:flex;
+}
+
+.tickets-buy{
+    width: 70%;
+    text-align: center;
+    position: relative;
+    animation: ticketsFadein ease 0.6s;
+}
+
+.tickets-buy__heading {
+    background-color: #009688;
+    color: white;
+    font-size: 30px;
+    letter-spacing: 4px;
+    padding: 32px 16px;
+}
+
+.tickets-buy__heading h3{
+    display: inline-block;
+    margin: 10px 0;
+    font-weight: 500;
+}
+
+.tickets-buy__heading ion-icon{
+    margin-right: 10px;
+}
+
+.tickets-buy>ion-icon{
+    position: absolute;
+    color: white;
+    top: 0;
+    right: 0;
+    padding: 16px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.tickets-buy>ion-icon:hover{
+    color: black;
+    background-color: #ccc;
+}
+
+.tickets-buy__main{
+    text-align: left;
+    background-color: #ffffff;
+    padding-left: 16px;
+    padding-right: 16px;
+    display: block;
+}
+
+.tickets-buy__main label{
+    display: block;
+    font-size: 15px;
+    padding: 15px 0;
+}
+
+.tickets-buy__main .tickets-input{
+    font-size: 15px;
+    padding: 8px;
+    width: 100%;
+    border:1px solid #ccc;
+}
+
+.button_pay{
+    text-align: center;
+    color: white;
+    width: 100%;
+    background-color: #009688;
+    margin: 16px 0;
+    padding: 16px;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.button_pay:hover{
+    color: black;
+    background-color: #ccc;
+}
+
+.button_pay:hover #submit_button{
+    color: black;
+    background-color: #ccc;
+}
+
+
+#submit_button{
+    text-align: center;
+    color: white;
+    background-color: #009688;
+    border: none;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+#help{
+    display: block;
+    text-align: right;
+    font-size: 15px;
+    padding:15px 0 30px;
+}
+
+#help a{
+    color: #2196F3;
+}
+
+@keyframes ticketsFadein {
+    from{
+        transform: translateY(-180px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+
+@media (max-width: 900px){
+    .heading p{
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .contact-contain{
+        width: 90%;
+    }
+
+    .half{
+        width: 100%;
+    }
+}
+
+@media (max-width: 650px){
+
+    #slider .text{
+        bottom: 20px;
+        line-height: 20px;
+    }
+
+    .text > h2 {
+        font-size: 20px;
+    }
+
+    .text > span {
+        font-size: 14px;
+    }
+
+    #nav{
+        display: block;
+        width: 100%;
+    }
+
+    #nav .responsive-li{
+        display: none;
+    }
+
+    #nav .responsive-li.open{
+        display: block;
+    }
+
+    #nav .responsive-li a {
+        display: block;
+    }
+
+    #nav .subnav li{
+        display: block;
+    }
+
+    #nav .subnav li a {
+        padding: 0 32px;
+    }
+
+    #search a ion-icon{
+        display: none;
+    }
+
+    #responsive-button{
+        display: block;
+    }
+
+    #search #responsive-button:hover{
+        color: #000;
+        background-color: #ccc;
+    }
+
+    .contact-us ul{
+        flex-direction: column;
+    }
+
+    .contact-us ul li{
+        width: 90%;
+    }
+
+    .book-ticket
+    {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 8px;
+    }
+
+    .content-date{
+        width: 100%;
+    }
+
+    .address-book
+    {
+        width: 100%;
+    }
+
+    .contac-info{
+        flex-direction: column;
+    }
+
+    .input-info{
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    .info{
+        width: 100%;
+    }
+
+    .info p{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 500px) {
+    .contact-us li {
+        margin: 32px 10px 0px;
+        width: 33.33333%;
+    }
+
+    .contact-us img {
+        padding-bottom: 32px;
+    }
+
+    .information{
+        margin-bottom: 32px;
+    }
+}
